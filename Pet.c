@@ -34,3 +34,9 @@ Pet walk(Pet pet){
     }
     return pet;
 }
+
+int main()
+{
+
+    return 0;
+}
