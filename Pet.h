@@ -8,11 +8,11 @@ typedef struct Pet
     // Add the variables that constitute our pet
     MOODS mood;
     int hunger;
-    int energy;
+    int stamina;
     char name[15];
 }Pet;
 
-// Function prototypes
+// Function prototypesss
 Pet makeHappy(Pet pet);
 Pet makeSad(Pet pet);
 Pet makeNeutral(Pet pet);
