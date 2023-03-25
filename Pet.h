@@ -13,6 +13,7 @@ typedef struct Pet
 }Pet;
 
 // Function prototypesss
+Pet initPet();
 Pet makeHappy(Pet pet);
 Pet makeSad(Pet pet);
 Pet makeNeutral(Pet pet);

@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include "Pet.h"
 
+Pet initPet(){
+    Pet newpet;
+    newpet.hunger=100;
+    newpet.mood = happy;
+    newpet.stamina = 100;
+    strcpy(newpet.name,"doggie");
+}
+
 Pet makeHappy(Pet pet){
     pet.mood = happy;
     return pet;
@@ -22,9 +30,6 @@ Pet feed(Pet pet){
     if(pet.hunger > 100){
         pet.hunger = 100;
     }
-
-
-    // code
     return pet;
 }
 Pet walk(Pet pet){
@@ -33,10 +38,4 @@ Pet walk(Pet pet){
         pet.stamina = 0;
     }
     return pet;
-}
-
-int main()
-{
-
-    return 0;
 }
