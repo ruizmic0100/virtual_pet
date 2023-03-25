@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "lcd_test.h": "c",
+        "gui_paint.h": "c",
+        "lcd_1in8.h": "c"
+    }
+}

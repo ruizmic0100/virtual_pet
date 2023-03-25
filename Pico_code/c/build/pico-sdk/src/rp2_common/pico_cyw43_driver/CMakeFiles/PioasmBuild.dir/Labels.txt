@@ -1,0 +1,13 @@
+# Target labels
+ PioasmBuild
+# Source files and their labels
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.rule
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete.rule
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/font12.c
+fonts.h
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/fonts.h
+
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/font12CN.c
+fonts.h
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/fonts.h
+
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/font16.c
+fonts.h
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/fonts.h
+
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/font20.c
+fonts.h
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/fonts.h
+
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/font24.c
+fonts.h
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/fonts.h
+
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/font24CN.c
+fonts.h
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/fonts.h
+
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/font8.c
+fonts.h
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/fonts.h
+
+/home/ghostrunner/virtual_pet/Pico_code/c/lib/Fonts/fonts.h
+stdint.h
+-
+
