@@ -1,0 +1,3 @@
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pioasm/CMakeFiles/edit_cache.dir
+/home/ghostrunner/virtual_pet/Pico_code/c/build/pioasm/CMakeFiles/pioasm.dir

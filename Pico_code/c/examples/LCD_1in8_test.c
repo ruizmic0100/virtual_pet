@@ -27,8 +27,11 @@
 # THE SOFTWARE.
 #
 ******************************************************************************/
+// RESOLUTION 160x128
 #include "LCD_Test.h"
 #include "LCD_1in8.h"
+
+void animationTest(UDOUBLE ImageSize, UWORD* BlackImage);
 
 
 bool reserved_addr(uint8_t addr) {
@@ -66,38 +69,32 @@ int LCD_1in8_test(void)
     printf("drawing...\r\n");
     // /*2.Drawing on the image*/
 
-   	Paint_DrawPoint(2,1, BLACK, DOT_PIXEL_1X1,  DOT_FILL_RIGHTUP);//240 240
-    Paint_DrawPoint(2,6, BLACK, DOT_PIXEL_2X2,  DOT_FILL_RIGHTUP);
-    Paint_DrawPoint(2,11, BLACK, DOT_PIXEL_3X3, DOT_FILL_RIGHTUP);
-    Paint_DrawPoint(2,16, BLACK, DOT_PIXEL_4X4, DOT_FILL_RIGHTUP);
-    Paint_DrawPoint(2,21, BLACK, DOT_PIXEL_5X5, DOT_FILL_RIGHTUP);
+   	// Paint_DrawPoint(2,1, BLACK, DOT_PIXEL_1X1,  DOT_FILL_RIGHTUP);//240 240
 
-	Paint_DrawLine( 10,  5, 40, 35, MAGENTA, DOT_PIXEL_2X2, LINE_STYLE_SOLID);
-    Paint_DrawLine( 10, 35, 40,  5, MAGENTA, DOT_PIXEL_2X2, LINE_STYLE_SOLID);
+	// Paint_DrawLine( 10,  5, 40, 35, MAGENTA, DOT_PIXEL_2X2, LINE_STYLE_SOLID);
 
-    Paint_DrawLine( 80,  20, 110, 20, CYAN, DOT_PIXEL_1X1, LINE_STYLE_DOTTED);
-    Paint_DrawLine( 95,   5,  95, 35, CYAN, DOT_PIXEL_1X1, LINE_STYLE_DOTTED);
+    // Paint_DrawLine( 80,  20, 110, 20, CYAN, DOT_PIXEL_1X1, LINE_STYLE_DOTTED);
 
-    Paint_DrawRectangle(10, 5, 40, 35, RED, DOT_PIXEL_2X2,DRAW_FILL_EMPTY);
-    Paint_DrawRectangle(45, 5, 75, 35, BLUE, DOT_PIXEL_2X2,DRAW_FILL_FULL);
+    // Paint_DrawRectangle(10, 5, 40, 35, RED, DOT_PIXEL_2X2,DRAW_FILL_EMPTY);
 
-    Paint_DrawCircle(95, 20, 15, GREEN, DOT_PIXEL_1X1, DRAW_FILL_EMPTY);
-    Paint_DrawCircle(130, 20, 15, GREEN, DOT_PIXEL_1X1, DRAW_FILL_FULL);
+    // Paint_DrawCircle(95, 20, 15, GREEN, DOT_PIXEL_1X1, DRAW_FILL_EMPTY);
 	
-	
-    Paint_DrawString_CN(1,40, "ª∂”≠ π”√",  &Font24CN, BLUE, WHITE);
-    Paint_DrawString_EN(1, 83, "Pico-LCD-1.8", &Font12, WHITE, BLUE);
-    Paint_DrawString_EN (1,96 ,"160x128 Pixels", &Font12, WHITE,  BLACK);
-    Paint_DrawString_EN(1, 110, "ST7735S Controller", &Font12, RED, WHITE); 
+    Paint_DrawString_EN (1,96 ,"Animation Test", &Font12, WHITE,  BLACK);
 
     // /*3.Refresh the picture in RAM to LCD*/
   	LCD_1IN8_Display(BlackImage);
-    DEV_Delay_ms(2000);
+    DEV_Delay_ms(1000);
+    Paint_Clear(WHITE);
+  	LCD_1IN8_Display(BlackImage);
+    DEV_Delay_ms(10);
 
-     
-    Paint_DrawImage(gImage_1inch8_1,0,1,160,128);
-    LCD_1IN8_Display(BlackImage);
-    DEV_Delay_ms(2000);
+    while (1)
+        animationTest(Imagesize, BlackImage);
+
+
+    // Paint_DrawImage(gImage_1inch8_1,0,1,160,128);
+    // LCD_1IN8_Display(BlackImage);
+    // DEV_Delay_ms(2000);
      
 
     /* Module Exit */
@@ -107,5 +104,15 @@ int LCD_1in8_test(void)
     
     DEV_Module_Exit();
     return 0;
+}
+
+void animationTest(UDOUBLE ImageSize, UWORD* BlackImage)
+{
+    for (int x=0; x < 50; x++) {
+        Paint_DrawPoint(2,x, BLACK, DOT_PIXEL_1X1,  DOT_FILL_RIGHTUP);//240 240
+        LCD_1IN8_Display(BlackImage);
+        DEV_Delay_ms(30);
+        Paint_Clear(WHITE);
+    }
 }
 
