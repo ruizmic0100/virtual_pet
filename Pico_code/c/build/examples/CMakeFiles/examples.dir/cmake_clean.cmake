@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/examples.dir/LCD_2in_test.c.obj"
   "CMakeFiles/examples.dir/OLED_1in3_C_test.c.obj"
   "CMakeFiles/examples.dir/OLED_2in23_test.c.obj"
+  "CMakeFiles/examples.dir/Pet.c.obj"
   "CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj"
   "CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c.obj"
   "CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c.obj"

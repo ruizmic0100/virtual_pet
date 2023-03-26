@@ -471,6 +471,7 @@ examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj: ../lib/LCD/LCD_1in8.h
 examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj: ../examples/ImageData.h
 examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj: ../examples/LCD_1in8_test.c
 examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj: ../examples/LCD_Test.h
+examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj: ../examples/Pet.h
 examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/boards/include/boards/pico.h
 examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_base/include/pico.h
 examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -678,6 +679,9 @@ examples/CMakeFiles/examples.dir/OLED_2in23_test.c.obj: /home/ghostrunner/virtua
 examples/CMakeFiles/examples.dir/OLED_2in23_test.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
 examples/CMakeFiles/examples.dir/OLED_2in23_test.c.obj: generated/pico_base/pico/config_autogen.h
 examples/CMakeFiles/examples.dir/OLED_2in23_test.c.obj: generated/pico_base/pico/version.h
+
+examples/CMakeFiles/examples.dir/Pet.c.obj: ../examples/Pet.c
+examples/CMakeFiles/examples.dir/Pet.c.obj: ../examples/Pet.h
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/boards/include/boards/pico.h
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_base/include/pico.h

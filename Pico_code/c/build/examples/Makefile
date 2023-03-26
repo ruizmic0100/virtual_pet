@@ -395,6 +395,33 @@ OLED_2in23_test.c.s:
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build && $(MAKE) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/OLED_2in23_test.c.s
 .PHONY : OLED_2in23_test.c.s
 
+Pet.obj: Pet.c.obj
+
+.PHONY : Pet.obj
+
+# target to build an object file
+Pet.c.obj:
+	cd /home/ghostrunner/virtual_pet/Pico_code/c/build && $(MAKE) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/Pet.c.obj
+.PHONY : Pet.c.obj
+
+Pet.i: Pet.c.i
+
+.PHONY : Pet.i
+
+# target to preprocess a source file
+Pet.c.i:
+	cd /home/ghostrunner/virtual_pet/Pico_code/c/build && $(MAKE) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/Pet.c.i
+.PHONY : Pet.c.i
+
+Pet.s: Pet.c.s
+
+.PHONY : Pet.s
+
+# target to generate assembly for a file
+Pet.c.s:
+	cd /home/ghostrunner/virtual_pet/Pico_code/c/build && $(MAKE) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/Pet.c.s
+.PHONY : Pet.c.s
+
 home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.obj: home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 .PHONY : home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.obj
@@ -1532,6 +1559,9 @@ help:
 	@echo "... OLED_2in23_test.obj"
 	@echo "... OLED_2in23_test.i"
 	@echo "... OLED_2in23_test.s"
+	@echo "... Pet.obj"
+	@echo "... Pet.i"
+	@echo "... Pet.s"
 	@echo "... home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.s"

@@ -30,8 +30,10 @@
 // RESOLUTION 160x128
 #include "LCD_Test.h"
 #include "LCD_1in8.h"
+#include "Pet.h"
 
 void animationTest(UDOUBLE ImageSize, UWORD* BlackImage);
+Pet dogInit();
 
 
 bool reserved_addr(uint8_t addr) {
@@ -45,6 +47,10 @@ int LCD_1in8_test(void)
     if(DEV_Module_Init()!=0){
         return -1;
     }
+
+    // Create Pet: Dog
+    Pet dog = dogInit();
+
     
     /* LCD Init */
     printf("1.8inch LCD demo...\r\n");
@@ -78,8 +84,11 @@ int LCD_1in8_test(void)
     // Paint_DrawRectangle(10, 5, 40, 35, RED, DOT_PIXEL_2X2,DRAW_FILL_EMPTY);
 
     // Paint_DrawCircle(95, 20, 15, GREEN, DOT_PIXEL_1X1, DRAW_FILL_EMPTY);
-	
-    Paint_DrawString_EN (1,96 ,"Animation Test", &Font12, WHITE,  BLACK);
+    
+    // Print out pet's name:
+    char buf[30];
+    sprintf(buf, "%s", dog.name);
+    Paint_DrawString_EN (1,96 , buf, &Font12, WHITE,  BLACK);
 
     // /*3.Refresh the picture in RAM to LCD*/
   	LCD_1IN8_Display(BlackImage);
@@ -87,10 +96,14 @@ int LCD_1in8_test(void)
     Paint_Clear(WHITE);
   	LCD_1IN8_Display(BlackImage);
     DEV_Delay_ms(10);
+    LCD_1IN8_Clear(WHITE);
+
+    Paint_DrawImage(gBlue_WeirdThing,0,1,32,32);
+    LCD_1IN8_Display(BlackImage);
+    DEV_Delay_ms(1000);
 
     while (1)
-        animationTest(Imagesize, BlackImage);
-
+        // animationTest(Imagesize, BlackImage);
 
     // Paint_DrawImage(gImage_1inch8_1,0,1,160,128);
     // LCD_1IN8_Display(BlackImage);
@@ -116,3 +129,13 @@ void animationTest(UDOUBLE ImageSize, UWORD* BlackImage)
     }
 }
 
+Pet dogInit()
+{
+    Pet tempPet;
+
+    strcpy(tempPet.name, "Doggie");
+    tempPet.stamina = 100;
+    tempPet.hunger = 100;
+
+    return tempPet;
+}

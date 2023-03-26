@@ -1,14 +1,14 @@
 #ifndef PET_H
 #define PET_H
 
-enum MOODS {sad,neutral,happy};
+typedef enum MOODS {sad,neutral,happy} MOODS;
 
 typedef struct Pet
 {
     // Add the variables that constitute our pet
     MOODS mood;
     int hunger;
-    int energy;
+    int stamina;
     char name[15];
 }Pet;
 

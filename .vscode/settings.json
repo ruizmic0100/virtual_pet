@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "pet.h": "c",
+        "lcd_test.h": "c",
+        "imagedata.h": "c",
+        "gui_paint.h": "c"
+    }
+}

@@ -2,6 +2,8 @@ Archive member included to satisfy reference by file (symbol)
 
 examples/libexamples.a(LCD_1in8_test.c.obj)
                               CMakeFiles/main.dir/main.c.obj (LCD_1in8_test)
+examples/libexamples.a(ImageData.c.obj)
+                              examples/libexamples.a(LCD_1in8_test.c.obj) (gBlue_WeirdThing)
 lib/LCD/libLCD.a(LCD_1in8.c.obj)
                               examples/libexamples.a(LCD_1in8_test.c.obj) (LCD_1IN8_Init)
 lib/GUI/libGUI.a(GUI_Paint.c.obj)
@@ -36,6 +38,8 @@ lib/Config/libConfig.a(DEV_Config.c.obj)
                               /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-realloc.o) (_realloc_r)
 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
                               /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o) (_sbrk_r)
+/usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+                              examples/libexamples.a(LCD_1in8_test.c.obj) (strcpy)
 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
                               CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj (strlen)
 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-__atexit.o)
@@ -490,14 +494,34 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_buffer
                 0x0000000000000000        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._out_null
+                0x0000000000000000        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._out_rev
+                0x0000000000000000       0xd0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ntoa_format
+                0x0000000000000000      0x1d0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._out_fct
+                0x0000000000000000       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000000000000      0x478 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .rodata._ftoa.str1.4
+                0x0000000000000000       0x15 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x0000000000000000      0x3e0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._vsnprintf
+                0x0000000000000000      0xb08 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .rodata._vsnprintf
+                0x0000000000000000      0x1e0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_sprintf
                 0x0000000000000000       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_snprintf
                 0x0000000000000000       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_vsnprintf
                 0x0000000000000000       0x1c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text.vfctprintf
+                0x0000000000000000       0x20 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_printf
                 0x0000000000000000       0x40 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .rodata.pow10.5452
+                0x0000000000000000       0x50 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.clzsi    0x0000000000000000        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -518,6 +542,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .data          0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .text.__wrap___aeabi_idiv
+                0x0000000000000000       0x50 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .text.__wrap___aeabi_ldiv
+                0x0000000000000000      0x424 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_s64s64_rem
                 0x0000000000000000        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_u64u64_rem
@@ -529,11 +557,31 @@ Discarded input sections
                 0x0000000000000000        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.pop_r8_r11
                 0x0000000000000000        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_darithmetic
+                0x0000000000000000       0x80 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_cdcmple
+                0x0000000000000000       0x6c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_dcmpeq
                 0x0000000000000000       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmplt
+                0x0000000000000000        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmple
+                0x0000000000000000       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmpge
+                0x0000000000000000       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmpgt
+                0x0000000000000000        0xa CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_dcmpun
+                0x0000000000000000       0x1c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_ui2d
                 0x0000000000000000       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_i2d
+                0x0000000000000000       0x38 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_d2iz
+                0x0000000000000000       0x48 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.double2int
+                0x0000000000000000       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .text.__wrap___aeabi_d2uiz
                 0x0000000000000000       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.fix2double
                 0x0000000000000000       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -657,6 +705,14 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .data          0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.__wrap___aeabi_dsub
+                0x0000000000000000       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.dadd_shim
+                0x0000000000000000      0x15c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.dmul_shim
+                0x0000000000000000      0x15c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.ddiv_shim
+                0x0000000000000000      0x1b0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dsqrt_shim
                 0x0000000000000000      0x1a8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dcordic_vec_step
@@ -665,12 +721,18 @@ Discarded input sections
                 0x0000000000000000       0x76 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2int_shim
                 0x0000000000000000        0xe CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.double2uint_shim
+                0x0000000000000000        0xe CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2int64_shim
                 0x0000000000000000       0x1a CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.double2uint64_shim
+                0x0000000000000000       0x70 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2float_shim
                 0x0000000000000000       0x5c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.x2double_shims
                 0x0000000000000000       0x90 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .text.dunpacks
+                0x0000000000000000       0x3c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dreduce  0x0000000000000000       0x82 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dtan_shim
                 0x0000000000000000       0x20 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -858,8 +920,6 @@ Discarded input sections
                 0x0000000000000000       0x24 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .text.__wrap_realloc
                 0x0000000000000000       0x24 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .text.__wrap_free
-                0x0000000000000000        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .text.aeabi_memset_memcpy
@@ -885,6 +945,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .text.stdio_buffered_printer
+                0x0000000000000000       0x64 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
                 0x0000000000000000       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_end
@@ -902,6 +964,10 @@ Discarded input sections
  .text._isatty  0x0000000000000000        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_flush
                 0x0000000000000000       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .text.__wrap_vprintf
+                0x0000000000000000       0xd8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .text.__wrap_printf
+                0x0000000000000000       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_getchar
                 0x0000000000000000       0x7c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.getchar_timeout_us
@@ -1216,6 +1282,38 @@ Discarded input sections
                 0x0000000000000000       0x18 examples/libexamples.a(LCD_1in8_test.c.obj)
  .text.animationTest
                 0x0000000000000000       0x38 examples/libexamples.a(LCD_1in8_test.c.obj)
+ .text.dogInit  0x0000000000000000       0x34 examples/libexamples.a(LCD_1in8_test.c.obj)
+ .text          0x0000000000000000        0x0 examples/libexamples.a(ImageData.c.obj)
+ .data          0x0000000000000000        0x0 examples/libexamples.a(ImageData.c.obj)
+ .bss           0x0000000000000000        0x0 examples/libexamples.a(ImageData.c.obj)
+ .rodata.Alarm88
+                0x0000000000000000        0x8 examples/libexamples.a(ImageData.c.obj)
+ .rodata.Bat816
+                0x0000000000000000       0x10 examples/libexamples.a(ImageData.c.obj)
+ .rodata.Bluetooth88
+                0x0000000000000000        0x8 examples/libexamples.a(ImageData.c.obj)
+ .rodata.GPRS88
+                0x0000000000000000        0x8 examples/libexamples.a(ImageData.c.obj)
+ .rodata.Msg816
+                0x0000000000000000       0x10 examples/libexamples.a(ImageData.c.obj)
+ .rodata.Signal816
+                0x0000000000000000       0x10 examples/libexamples.a(ImageData.c.obj)
+ .rodata.gImage_0inch96_1
+                0x0000000000000000     0x6400 examples/libexamples.a(ImageData.c.obj)
+ .rodata.gImage_1inch14_1
+                0x0000000000000000     0xfd20 examples/libexamples.a(ImageData.c.obj)
+ .rodata.gImage_1inch3_1
+                0x0000000000000000    0x1c200 examples/libexamples.a(ImageData.c.obj)
+ .rodata.gImage_1inch3_C_1
+                0x0000000000000000      0x400 examples/libexamples.a(ImageData.c.obj)
+ .rodata.gImage_1inch44_1
+                0x0000000000000000     0x8000 examples/libexamples.a(ImageData.c.obj)
+ .rodata.gImage_1inch8_1
+                0x0000000000000000     0xa000 examples/libexamples.a(ImageData.c.obj)
+ .rodata.gImage_2inch_1
+                0x0000000000000000    0x25800 examples/libexamples.a(ImageData.c.obj)
+ .rodata.gImage_Test
+                0x0000000000000000     0xa000 examples/libexamples.a(ImageData.c.obj)
  .text          0x0000000000000000        0x0 lib/LCD/libLCD.a(LCD_1in8.c.obj)
  .data          0x0000000000000000        0x0 lib/LCD/libLCD.a(LCD_1in8.c.obj)
  .bss           0x0000000000000000        0x0 lib/LCD/libLCD.a(LCD_1in8.c.obj)
@@ -1232,6 +1330,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .data          0x0000000000000000        0x0 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .bss           0x0000000000000000        0x0 lib/GUI/libGUI.a(GUI_Paint.c.obj)
+ .rodata.Paint_DrawLine.constprop.0.str1.4
+                0x0000000000000000       0x49 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_DrawLine.constprop.0
                 0x0000000000000000      0x374 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_DrawPoint.constprop.1
@@ -1244,6 +1344,8 @@ Discarded input sections
                 0x0000000000000000      0x12c lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_ClearWindows
                 0x0000000000000000      0x1a4 lib/GUI/libGUI.a(GUI_Paint.c.obj)
+ .text.Paint_DrawPoint
+                0x0000000000000000      0x278 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_DrawLine
                 0x0000000000000000      0x3b4 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_DrawRectangle
@@ -1262,8 +1364,6 @@ Discarded input sections
                 0x0000000000000000        0xb lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_DrawTime
                 0x0000000000000000      0x214 lib/GUI/libGUI.a(GUI_Paint.c.obj)
- .text.Paint_DrawImage
-                0x0000000000000000       0x98 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_DrawImage1
                 0x0000000000000000       0x98 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_DrawBitMap
@@ -1295,9 +1395,9 @@ Discarded input sections
                 0x0000000000000000       0x50 lib/Config/libConfig.a(DEV_Config.c.obj)
  .text.DEV_Module_Exit
                 0x0000000000000000        0x4 lib/Config/libConfig.a(DEV_Config.c.obj)
- .text          0x0000000000000000        0x0 /tmp/ccbS5bTt.o
- .data          0x0000000000000000        0x0 /tmp/ccbS5bTt.o
- .bss           0x0000000000000000        0x0 /tmp/ccbS5bTt.o
+ .text          0x0000000000000000        0x0 /tmp/cc22k1WM.o
+ .data          0x0000000000000000        0x0 /tmp/cc22k1WM.o
+ .bss           0x0000000000000000        0x0 /tmp/cc22k1WM.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1409,6 +1509,8 @@ Discarded input sections
                 0x0000000000000000       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reallocr.o)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
  .text          0x0000000000000000       0x88 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-__atexit.o)
@@ -1477,11 +1579,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccbS5bTt.o
+ .boot2         0x0000000010000000      0x100 /tmp/cc22k1WM.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x8de0
+.text           0x0000000010000100     0x6938
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1721,493 +1823,391 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  .text.hard_assertion_failure
                 0x0000000010001f18        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000010001f18                hard_assertion_failure
- .text._out_null
-                0x0000000010001f24        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._out_rev
-                0x0000000010001f28       0xd0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ntoa_format
-                0x0000000010001ff8      0x1d0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x00000000100021c8       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._out_fct
-                0x00000000100021d8       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x00000000100021e8      0x478 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000010002660      0x3e0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._vsnprintf
-                0x0000000010002a40      0xb08 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text.vfctprintf
-                0x0000000010003548       0x20 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003548                vfctprintf
+                0x0000000010001f24       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x0000000010003568       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003568                weak_raw_vprintf
- .text          0x0000000010003598       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010001f34       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001f34                weak_raw_vprintf
+ .text          0x0000000010001f64       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x00000000100035a8       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100035a8                rom_func_lookup
+                0x0000000010001f74       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001f74                rom_func_lookup
  .text.rom_data_lookup
-                0x00000000100035b8       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100035b8                rom_data_lookup
+                0x0000000010001f84       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001f84                rom_data_lookup
  .text.rom_funcs_lookup
-                0x00000000100035c8       0x3c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100035c8                rom_funcs_lookup
- .text.__wrap___aeabi_idiv
-                0x0000000010003604       0x50 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003604                __wrap___aeabi_idivmod
-                0x0000000010003604                divmod_s32s32
-                0x0000000010003604                div_s32s32
-                0x0000000010003604                __wrap___aeabi_idiv
-                0x000000001000360c                divmod_s32s32_unsafe
-                0x0000000010003638                divmod_s32s32_savestate
+                0x0000000010001f94       0x3c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001f94                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x0000000010003654       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003654                __wrap___aeabi_uidiv
-                0x0000000010003654                __wrap___aeabi_uidivmod
-                0x0000000010003654                div_u32u32
-                0x0000000010003654                divmod_u32u32
-                0x000000001000365c                divmod_u32u32_unsafe
-                0x0000000010003684                divmod_u32u32_savestate
- .text.__wrap___aeabi_ldiv
-                0x00000000100036a0      0x424 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100036a0                div_s64s64
-                0x00000000100036a0                divmod_s64s64
-                0x00000000100036a0                __wrap___aeabi_ldivmod
-                0x00000000100036d0                div_u64u64
-                0x00000000100036d0                divmod_u64u64
-                0x00000000100036d0                __wrap___aeabi_uldivmod
-                0x00000000100036e0                divmod_u64u64_savestate
-                0x0000000010003700                divmod_s64s64_unsafe
-                0x0000000010003788                divmod_u64u64_unsafe
- .text.__wrap___aeabi_darithmetic
-                0x0000000010003ac4       0x80 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003ac4                __wrap___aeabi_drsub
-                0x0000000010003aca                __wrap___aeabi_dsub
-                0x0000000010003adc                __wrap___aeabi_dadd
-                0x0000000010003aee                __wrap___aeabi_ddiv
-                0x0000000010003b2a                __wrap___aeabi_dmul
- .text.__wrap___aeabi_cdcmple
-                0x0000000010003b44       0x6c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003b44                __wrap___aeabi_cdrcmple
-                0x0000000010003b54                __wrap___aeabi_cdcmple
-                0x0000000010003b54                __wrap___aeabi_cdcmpeq
- .text.__wrap___aeabi_dcmplt
-                0x0000000010003bb0        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003bb0                __wrap___aeabi_dcmplt
- .text.__wrap___aeabi_dcmple
-                0x0000000010003bbc       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003bbc                __wrap___aeabi_dcmple
- .text.__wrap___aeabi_dcmpge
-                0x0000000010003bcc       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003bcc                __wrap___aeabi_dcmpge
- .text.__wrap___aeabi_dcmpgt
-                0x0000000010003bdc        0xa CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003bdc                __wrap___aeabi_dcmpgt
- .text.__wrap___aeabi_dcmpun
-                0x0000000010003be6       0x1c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003be6                __wrap___aeabi_dcmpun
- *fill*         0x0000000010003c02        0x2 
- .text.__wrap___aeabi_i2d
-                0x0000000010003c04       0x38 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c04                __wrap___aeabi_ui2d
-                0x0000000010003c0c                __wrap___aeabi_i2d
- .text.__wrap___aeabi_d2iz
-                0x0000000010003c3c       0x48 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c3c                __wrap___aeabi_d2iz
-                0x0000000010003c3c                double2int_z
- .text.__wrap___aeabi_d2uiz
-                0x0000000010003c84       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c84                double2uint
-                0x0000000010003c84                __wrap___aeabi_d2uiz
+                0x0000000010001fd0       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010001fd0                __wrap___aeabi_uidiv
+                0x0000000010001fd0                __wrap___aeabi_uidivmod
+                0x0000000010001fd0                div_u32u32
+                0x0000000010001fd0                divmod_u32u32
+                0x0000000010001fd8                divmod_u32u32_unsafe
+                0x0000000010002000                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x0000000010003c9c       0xc0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010003c9c                __aeabi_double_init
+                0x000000001000201c       0xc0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x000000001000201c                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010003d5c       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003d5c                double_table_shim_on_use_helper
- .text.__wrap___aeabi_dsub
-                0x0000000010003d88       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003d88                drsub_shim
-                0x0000000010003d8e                dsub_shim
- .text.dadd_shim
-                0x0000000010003d98      0x15c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003d98                dadd_shim
- .text.dmul_shim
-                0x0000000010003ef4      0x15c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003ef4                dmul_shim
- .text.ddiv_shim
-                0x0000000010004050      0x1b0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004050                ddiv_shim
- .text.double2uint_shim
-                0x0000000010004200        0xe CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004200                double2uint_shim
-                0x0000000010004202                double2ufix_shim
- *fill*         0x000000001000420e        0x2 
- .text.double2uint64_shim
-                0x0000000010004210       0x70 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004210                double2uint64_shim
-                0x0000000010004212                double2ufix64_shim
-                0x0000000010004232                d2fix_a
- .text.dunpacks
-                0x0000000010004280       0x3c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004280                dunpacks
+                0x00000000100020dc       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100020dc                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x00000000100042bc       0x32 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x00000000100042bc                __wrap___aeabi_lmul
- *fill*         0x00000000100042ee        0x2 
+                0x0000000010002108       0x32 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000000010002108                __wrap___aeabi_lmul
+ *fill*         0x000000001000213a        0x2 
  .text.__aeabi_float_init
-                0x00000000100042f0       0x64 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x00000000100042f0                __aeabi_float_init
+                0x000000001000213c       0x64 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x000000001000213c                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000010004354       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010004354                float_table_shim_on_use_helper
+                0x00000000100021a0       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100021a0                float_table_shim_on_use_helper
  .text.__wrap_malloc
-                0x0000000010004380       0x24 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-                0x0000000010004380                __wrap_malloc
- .text          0x00000000100043a4       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100043a4                __aeabi_mem_init
- .text.memset   0x00000000100043b4        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100043b4                __wrap_memset
- .text.memcpy   0x00000000100043c0        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100043c0                __wrap___aeabi_memcpy
-                0x00000000100043c0                __wrap_memcpy
+                0x00000000100021cc       0x24 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x00000000100021cc                __wrap_malloc
+ .text.__wrap_free
+                0x00000000100021f0        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x00000000100021f0                __wrap_free
+ .text          0x00000000100021f8       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100021f8                __aeabi_mem_init
+ .text.memset   0x0000000010002208        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010002208                __wrap_memset
+ .text.memcpy   0x0000000010002214        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010002214                __wrap___aeabi_memcpy
+                0x0000000010002214                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x00000000100043cc       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002220       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x00000000100043dc       0x94 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .text.stdio_buffered_printer
-                0x0000000010004470       0x64 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002230       0x94 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x00000000100044d4      0x104 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100022c4      0x104 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x00000000100045d8       0x98 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100045d8                __wrap_putchar
+                0x00000000100023c8       0x98 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100023c8                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010004670       0x3c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004670                __wrap_puts
+                0x0000000010002460       0x3c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002460                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x00000000100046ac       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100046ac                stdio_set_driver_enabled
- .text.__wrap_vprintf
-                0x00000000100046dc       0xd8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100046dc                __wrap_vprintf
- .text.__wrap_printf
-                0x00000000100047b4       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100047b4                __wrap_printf
+                0x000000001000249c       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000249c                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x00000000100047cc       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100047cc                stdio_init_all
+                0x00000000100024cc       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100024cc                stdio_init_all
  .text.stdio_uart_out_chars
-                0x00000000100047dc       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100024dc       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x0000000010004828       0x84 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010004828                stdio_uart_in_chars
+                0x0000000010002528       0x84 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010002528                stdio_uart_in_chars
  .text.on_uart_rx
-                0x00000000100048ac       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100025ac       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x00000000100048d4       0x8c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100025d4       0x8c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init
-                0x0000000010004960       0x48 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010004960                stdio_uart_init
+                0x0000000010002660       0x48 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010002660                stdio_uart_init
  .text.resetd_init
-                0x00000000100049a8        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100026a8        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x00000000100049ac        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100026ac        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x00000000100049b8       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100026b8       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x00000000100049e0        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100026e0        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x00000000100049e4       0x64 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100026e4       0x64 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000010004a48        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004a48                usbd_app_driver_get_cb
+                0x0000000010002748        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002748                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000010004a54       0x34 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004a54                tud_cdc_line_coding_cb
+                0x0000000010002754       0x34 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010002754                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x0000000010004a88       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004a88                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x0000000010004a9c       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002788       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002788                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x000000001000279c       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010004aac       0x54 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100027ac       0x54 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_in_chars
-                0x0000000010004b00       0x90 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004b00                stdio_usb_in_chars
+                0x0000000010002800       0x90 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002800                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000010004b90      0x100 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002890      0x100 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000010004c90       0xa8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002990       0xa8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.tud_cdc_rx_cb
-                0x0000000010004d38       0x20 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004d38                tud_cdc_rx_cb
+                0x0000000010002a38       0x20 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002a38                tud_cdc_rx_cb
  .text.stdio_usb_init
-                0x0000000010004d58       0xdc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004d58                stdio_usb_init
+                0x0000000010002a58       0xdc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010002a58                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000010004e34        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e34                tud_descriptor_device_cb
+                0x0000000010002b34        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010002b34                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000010004e3c        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e3c                tud_descriptor_configuration_cb
+                0x0000000010002b3c        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010002b3c                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000010004e44       0x70 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e44                tud_descriptor_string_cb
+                0x0000000010002b44       0x70 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010002b44                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010004eb4       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010002bb4       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x0000000010004ec4      0x1bc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000010004ec4                pico_get_unique_board_id_string
+                0x0000000010002bc4      0x1bc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010002bc4                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x0000000010005080       0x40 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010005080                flash_get_unique_id
+                0x0000000010002d80       0x40 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000010002d80                flash_get_unique_id
  .text.dcd_int_enable
-                0x00000000100050c0        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050c0                dcd_int_enable
+                0x0000000010002dc0        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002dc0                dcd_int_enable
  .text.dcd_set_address
-                0x00000000100050cc       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050cc                dcd_set_address
+                0x0000000010002dcc       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002dcc                dcd_set_address
  .text.dcd_connect
-                0x00000000100050e0       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050e0                dcd_connect
+                0x0000000010002de0       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002de0                dcd_connect
  .text.dcd_init
-                0x00000000100050f0       0x9c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050f0                dcd_init
+                0x0000000010002df0       0x9c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002df0                dcd_init
  .text.dcd_edpt0_status_complete
-                0x000000001000518c       0x1c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000518c                dcd_edpt0_status_complete
+                0x0000000010002e8c       0x1c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002e8c                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x00000000100051a8      0x108 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100051a8                dcd_edpt_open
+                0x0000000010002ea8      0x108 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002ea8                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x00000000100052b0        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100052b0                dcd_edpt_close_all
+                0x0000000010002fb0        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002fb0                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x00000000100052b8       0x24 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100052b8                dcd_edpt_xfer
+                0x0000000010002fb8       0x24 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002fb8                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x00000000100052dc       0x38 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100052dc                dcd_edpt_stall
+                0x0000000010002fdc       0x38 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002fdc                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x0000000010005314       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005314                dcd_edpt_clear_stall
+                0x0000000010003014       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010003014                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x0000000010005344       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010005344                rp2040_usb_init
+                0x0000000010003044       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010003044                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x0000000010005390       0x54 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010005390                hw_endpoint_xfer_start
+                0x0000000010003090       0x54 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010003090                hw_endpoint_xfer_start
  .text.tud_mounted
-                0x00000000100053e4       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100053e4                tud_mounted
+                0x00000000100030e4       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100030e4                tud_mounted
  .text.tud_suspended
-                0x00000000100053f4       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100053f4                tud_suspended
+                0x00000000100030f4       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100030f4                tud_suspended
  .text.tud_inited
-                0x0000000010005404       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005404                tud_inited
+                0x0000000010003104       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003104                tud_inited
  .text.tud_init
-                0x0000000010005418       0xe4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005418                tud_init
+                0x0000000010003118       0xe4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003118                tud_init
  .text.tud_task_ext
-                0x00000000100054fc      0x858 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100054fc                tud_task_ext
+                0x00000000100031fc      0x858 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100031fc                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x0000000010005d54       0x9c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005d54                usbd_open_edpt_pair
+                0x0000000010003a54       0x9c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003a54                usbd_open_edpt_pair
  .text.usbd_defer_func
-                0x0000000010005df0       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005df0                usbd_defer_func
+                0x0000000010003af0       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003af0                usbd_defer_func
  .text.usbd_edpt_open
-                0x0000000010005e3c       0x34 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005e3c                usbd_edpt_open
+                0x0000000010003b3c       0x34 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003b3c                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010005e70       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005e70                usbd_edpt_claim
+                0x0000000010003b70       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003b70                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010005e98       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005e98                usbd_edpt_release
+                0x0000000010003b98       0x28 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003b98                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010005ec0       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005ec0                usbd_edpt_xfer
+                0x0000000010003bc0       0x4c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003bc0                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010005f0c       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005f0c                tud_control_status
+                0x0000000010003c0c       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003c0c                tud_control_status
  .text.tud_control_xfer
-                0x0000000010005f3c       0xb8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005f3c                tud_control_xfer
+                0x0000000010003c3c       0xb8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003c3c                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010005ff4       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005ff4                usbd_control_reset
+                0x0000000010003cf4       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003cf4                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010006008        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006008                usbd_control_set_complete_callback
+                0x0000000010003d08        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003d08                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010006014       0x1c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006014                usbd_control_set_request
+                0x0000000010003d14       0x1c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003d14                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010006030       0xf8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006030                usbd_control_xfer_cb
+                0x0000000010003d30       0xf8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003d30                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x0000000010006128       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006128                tud_cdc_n_connected
+                0x0000000010003e28       0x30 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010003e28                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x0000000010006158       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006158                tud_cdc_n_available
+                0x0000000010003e58       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010003e58                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010006170       0x70 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006170                tud_cdc_n_read
+                0x0000000010003e70       0x70 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010003e70                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x00000000100061e0       0x78 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100061e0                tud_cdc_n_write_flush
+                0x0000000010003ee0       0x78 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010003ee0                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x0000000010006258       0x34 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006258                tud_cdc_n_write
+                0x0000000010003f58       0x34 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010003f58                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x000000001000628c       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000628c                tud_cdc_n_write_available
+                0x0000000010003f8c       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010003f8c                tud_cdc_n_write_available
  .text.cdcd_init
-                0x00000000100062a4       0x7c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100062a4                cdcd_init
+                0x0000000010003fa4       0x7c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010003fa4                cdcd_init
  .text.cdcd_reset
-                0x0000000010006320       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006320                cdcd_reset
+                0x0000000010004020       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004020                cdcd_reset
  .text.cdcd_open
-                0x000000001000634c       0xe8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000634c                cdcd_open
+                0x000000001000404c       0xe8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000404c                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010006434       0xe4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006434                cdcd_control_xfer_cb
+                0x0000000010004134       0xe4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004134                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x0000000010006518      0x198 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006518                cdcd_xfer_cb
+                0x0000000010004218      0x198 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010004218                cdcd_xfer_cb
  .text.tusb_init
-                0x00000000100066b0        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100066b0                tusb_init
+                0x00000000100043b0        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100043b0                tusb_init
  .text.tusb_inited
-                0x00000000100066bc        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100066bc                tusb_inited
+                0x00000000100043bc        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100043bc                tusb_inited
  .text.tu_edpt_claim
-                0x00000000100066c4       0x50 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100066c4                tu_edpt_claim
+                0x00000000100043c4       0x50 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100043c4                tu_edpt_claim
  .text.tu_edpt_release
-                0x0000000010006714       0x38 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006714                tu_edpt_release
+                0x0000000010004414       0x38 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010004414                tu_edpt_release
  .text.tu_edpt_validate
-                0x000000001000674c       0x78 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x000000001000674c                tu_edpt_validate
+                0x000000001000444c       0x78 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x000000001000444c                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x00000000100067c4       0x34 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100067c4                tu_edpt_bind_driver
+                0x00000000100044c4       0x34 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100044c4                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x00000000100067f8       0x70 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100067f8                tu_fifo_config
+                0x00000000100044f8       0x70 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100044f8                tu_fifo_config
  .text.tu_fifo_count
-                0x0000000010006868       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006868                tu_fifo_count
+                0x0000000010004568       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004568                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010006894       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006894                tu_fifo_empty
+                0x0000000010004594       0x10 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004594                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x00000000100068a4       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100068a4                tu_fifo_remaining
+                0x00000000100045a4       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100045a4                tu_fifo_remaining
  .text.tu_fifo_read
-                0x00000000100068d0       0x9c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100068d0                tu_fifo_read
+                0x00000000100045d0       0x9c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100045d0                tu_fifo_read
  .text.tu_fifo_read_n
-                0x000000001000696c       0xf0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000696c                tu_fifo_read_n
+                0x000000001000466c       0xf0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000466c                tu_fifo_read_n
  .text.tu_fifo_write
-                0x0000000010006a5c       0x88 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006a5c                tu_fifo_write
+                0x000000001000475c       0x88 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000475c                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010006ae4      0x158 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006ae4                tu_fifo_write_n
+                0x00000000100047e4      0x158 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100047e4                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000010006c3c       0x40 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006c3c                tu_fifo_clear
+                0x000000001000493c       0x40 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000493c                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000010006c7c       0x48 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006c7c                tu_fifo_set_overwritable
+                0x000000001000497c       0x48 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000497c                tu_fifo_set_overwritable
  .text.spi_init
-                0x0000000010006cc4       0xf4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x0000000010006cc4                spi_init
+                0x00000000100049c4       0xf4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+                0x00000000100049c4                spi_init
  .text.i2c_set_baudrate
-                0x0000000010006db8       0xc4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010006db8                i2c_set_baudrate
+                0x0000000010004ab8       0xc4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010004ab8                i2c_set_baudrate
  .text.i2c_init
-                0x0000000010006e7c       0x54 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010006e7c                i2c_init
+                0x0000000010004b7c       0x54 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010004b7c                i2c_init
  .text.LCD_1in8_test
-                0x0000000010006ed0       0xf8 examples/libexamples.a(LCD_1in8_test.c.obj)
-                0x0000000010006ed0                LCD_1in8_test
+                0x0000000010004bd0      0x12c examples/libexamples.a(LCD_1in8_test.c.obj)
+                0x0000000010004bd0                LCD_1in8_test
  .text.LCD_1IN8_Init
-                0x0000000010006fc8      0x98c lib/LCD/libLCD.a(LCD_1in8.c.obj)
-                0x0000000010006fc8                LCD_1IN8_Init
+                0x0000000010004cfc      0x98c lib/LCD/libLCD.a(LCD_1in8.c.obj)
+                0x0000000010004cfc                LCD_1IN8_Init
  .text.LCD_1IN8_Clear
-                0x0000000010007954      0x1d0 lib/LCD/libLCD.a(LCD_1in8.c.obj)
-                0x0000000010007954                LCD_1IN8_Clear
+                0x0000000010005688      0x1d0 lib/LCD/libLCD.a(LCD_1in8.c.obj)
+                0x0000000010005688                LCD_1IN8_Clear
  .text.LCD_1IN8_Display
-                0x0000000010007b24      0x1b0 lib/LCD/libLCD.a(LCD_1in8.c.obj)
-                0x0000000010007b24                LCD_1IN8_Display
+                0x0000000010005858      0x1b0 lib/LCD/libLCD.a(LCD_1in8.c.obj)
+                0x0000000010005858                LCD_1IN8_Display
  .text.Paint_SetPixel.part.0
-                0x0000000010007cd4      0x12c lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x0000000010005a08      0x12c lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_DrawChar.part.0
-                0x0000000010007e00       0xe4 lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x0000000010005b34       0xe4 lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .text.Paint_NewImage
-                0x0000000010007ee4       0x44 lib/GUI/libGUI.a(GUI_Paint.c.obj)
-                0x0000000010007ee4                Paint_NewImage
+                0x0000000010005c18       0x44 lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x0000000010005c18                Paint_NewImage
  .text.Paint_SetRotate
-                0x0000000010007f28       0x20 lib/GUI/libGUI.a(GUI_Paint.c.obj)
-                0x0000000010007f28                Paint_SetRotate
+                0x0000000010005c5c       0x20 lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x0000000010005c5c                Paint_SetRotate
  .text.Paint_SetScale
-                0x0000000010007f48       0x6c lib/GUI/libGUI.a(GUI_Paint.c.obj)
-                0x0000000010007f48                Paint_SetScale
+                0x0000000010005c7c       0x6c lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x0000000010005c7c                Paint_SetScale
  .text.Paint_Clear
-                0x0000000010007fb4       0xd8 lib/GUI/libGUI.a(GUI_Paint.c.obj)
-                0x0000000010007fb4                Paint_Clear
- .text.Paint_DrawPoint
-                0x000000001000808c      0x278 lib/GUI/libGUI.a(GUI_Paint.c.obj)
-                0x000000001000808c                Paint_DrawPoint
+                0x0000000010005ce8       0xd8 lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x0000000010005ce8                Paint_Clear
  .text.Paint_DrawString_EN
-                0x0000000010008304       0xa4 lib/GUI/libGUI.a(GUI_Paint.c.obj)
-                0x0000000010008304                Paint_DrawString_EN
+                0x0000000010005dc0       0xa4 lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x0000000010005dc0                Paint_DrawString_EN
+ .text.Paint_DrawImage
+                0x0000000010005e64       0x98 lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x0000000010005e64                Paint_DrawImage
  .text.DEV_Digital_Write
-                0x00000000100083a8       0x14 lib/Config/libConfig.a(DEV_Config.c.obj)
-                0x00000000100083a8                DEV_Digital_Write
+                0x0000000010005efc       0x14 lib/Config/libConfig.a(DEV_Config.c.obj)
+                0x0000000010005efc                DEV_Digital_Write
  .text.DEV_SPI_WriteByte
-                0x00000000100083bc       0x1c lib/Config/libConfig.a(DEV_Config.c.obj)
-                0x00000000100083bc                DEV_SPI_WriteByte
+                0x0000000010005f10       0x1c lib/Config/libConfig.a(DEV_Config.c.obj)
+                0x0000000010005f10                DEV_SPI_WriteByte
  .text.DEV_SPI_Write_nByte
-                0x00000000100083d8       0x14 lib/Config/libConfig.a(DEV_Config.c.obj)
-                0x00000000100083d8                DEV_SPI_Write_nByte
+                0x0000000010005f2c       0x14 lib/Config/libConfig.a(DEV_Config.c.obj)
+                0x0000000010005f2c                DEV_SPI_Write_nByte
  .text.DEV_Delay_ms
-                0x00000000100083ec        0x8 lib/Config/libConfig.a(DEV_Config.c.obj)
-                0x00000000100083ec                DEV_Delay_ms
+                0x0000000010005f40        0x8 lib/Config/libConfig.a(DEV_Config.c.obj)
+                0x0000000010005f40                DEV_Delay_ms
  .text.DEV_Module_Init
-                0x00000000100083f4      0x104 lib/Config/libConfig.a(DEV_Config.c.obj)
-                0x00000000100083f4                DEV_Module_Init
+                0x0000000010005f48      0x104 lib/Config/libConfig.a(DEV_Config.c.obj)
+                0x0000000010005f48                DEV_Module_Init
  .text.DEV_SET_PWM
-                0x00000000100084f8       0x40 lib/Config/libConfig.a(DEV_Config.c.obj)
-                0x00000000100084f8                DEV_SET_PWM
- .text          0x0000000010008538       0x28 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
-                0x0000000010008538                malloc
-                0x000000001000854c                free
- .text          0x0000000010008560      0x58c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
-                0x0000000010008560                _malloc_r
- .text          0x0000000010008aec        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
-                0x0000000010008aec                __malloc_lock
-                0x0000000010008af0                __malloc_unlock
- .text          0x0000000010008af4       0x24 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
-                0x0000000010008af4                _sbrk_r
- .text          0x0000000010008b18       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000010008b18                strlen
- .text          0x0000000010008b80      0x27c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
-                0x0000000010008b80                _malloc_trim_r
-                0x0000000010008c20                _free_r
+                0x000000001000604c       0x40 lib/Config/libConfig.a(DEV_Config.c.obj)
+                0x000000001000604c                DEV_SET_PWM
+ .text          0x000000001000608c       0x28 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
+                0x000000001000608c                malloc
+                0x00000000100060a0                free
+ .text          0x00000000100060b4      0x58c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
+                0x00000000100060b4                _malloc_r
+ .text          0x0000000010006640        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
+                0x0000000010006640                __malloc_lock
+                0x0000000010006644                __malloc_unlock
+ .text          0x0000000010006648       0x24 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
+                0x0000000010006648                _sbrk_r
+ .text          0x000000001000666c       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+                0x000000001000666c                strcpy
+ .text          0x000000001000667c       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x000000001000667c                strlen
+ .text          0x00000000100066e4      0x27c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+                0x00000000100066e4                _malloc_trim_r
+                0x0000000010006784                _free_r
  *(.fini)
- .fini          0x0000000010008dfc        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
-                0x0000000010008dfc                _fini
- .fini.__stub   0x0000000010008e00       0xe0 linker stubs
+ .fini          0x0000000010006960        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x0000000010006960                _fini
+ *fill*         0x0000000010006964        0x4 
+ .fini.__stub   0x0000000010006968       0xd0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2219,151 +2219,142 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000010008ee0        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010008ee0                . = ALIGN (0x4)
+ .eh_frame      0x0000000010006a38        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010006a38                . = ALIGN (0x4)
 
-.glue_7         0x0000000010008ee0        0x0
- .glue_7        0x0000000010008ee0        0x0 linker stubs
+.glue_7         0x0000000010006a38        0x0
+ .glue_7        0x0000000010006a38        0x0 linker stubs
 
-.glue_7t        0x0000000010008ee0        0x0
- .glue_7t       0x0000000010008ee0        0x0 linker stubs
+.glue_7t        0x0000000010006a38        0x0
+ .glue_7t       0x0000000010006a38        0x0 linker stubs
 
-.vfp11_veneer   0x0000000010008ee0        0x0
- .vfp11_veneer  0x0000000010008ee0        0x0 linker stubs
+.vfp11_veneer   0x0000000010006a38        0x0
+ .vfp11_veneer  0x0000000010006a38        0x0 linker stubs
 
-.v4_bx          0x0000000010008ee0        0x0
- .v4_bx         0x0000000010008ee0        0x0 linker stubs
+.v4_bx          0x0000000010006a38        0x0
+ .v4_bx         0x0000000010006a38        0x0 linker stubs
 
-.iplt           0x0000000010008ee0        0x0
- .iplt          0x0000000010008ee0        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010006a38        0x0
+ .iplt          0x0000000010006a38        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000010008ee0      0xac0
+.rodata         0x0000000010006a38     0x2f30
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.spin_lock_claim_unused.str1.4
-                0x0000000010008ee0       0x1b CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000010008efb        0x1 
+                0x0000000010006a38       0x1b CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000010006a53        0x1 
  .rodata.user_irq_claim_unused.str1.4
-                0x0000000010008efc       0x1b CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x0000000010008f17        0x1 
+                0x0000000010006a54       0x1b CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x0000000010006a6f        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010008f18       0x22 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000010008f3a        0x2 
+                0x0000000010006a70       0x22 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x0000000010006a92        0x2 
  .rodata.panic.str1.4
-                0x0000000010008f3c       0x12 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x0000000010008f4e        0x2 
+                0x0000000010006a94       0x12 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x0000000010006aa6        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010008f50        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .rodata._ftoa.str1.4
-                0x0000000010008f5c       0x15 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010008f71        0x3 
- .rodata._vsnprintf
-                0x0000000010008f74      0x1e0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010009154        0x4 
- .rodata.pow10.5452
-                0x0000000010009158       0x50 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010006aa8        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.__wrap_malloc.str1.4
-                0x00000000100091a8        0xe CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- *fill*         0x00000000100091b6        0x2 
+                0x0000000010006ab4        0xe CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ *fill*         0x0000000010006ac2        0x2 
  .rodata.str1.4
-                0x00000000100091b8       0x3c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006ac4       0x3c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x00000000100091f4        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006b00        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010009200        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006b0c        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x000000001000920c        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006b18        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.6238
-                0x0000000010009218        0x2 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x000000001000921a        0x2 
+                0x0000000010006b24        0x2 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x0000000010006b26        0x2 
  .rodata.str1.4
-                0x000000001000921c       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010006b28       0x2c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4878
-                0x0000000010009248        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010006b54        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.4882
-                0x0000000010009254        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010006b60        0x8 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata._resetd_driver
-                0x000000001000925c       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010006b68       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x0000000010009274       0x13 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x0000000010009287        0x1 
+                0x0000000010006b80       0x13 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x0000000010006b93        0x1 
  .rodata.__bi_188.7657
-                0x0000000010009288        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010006b94        0xc CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x0000000010009294       0x2a CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x00000000100092be        0x2 
+                0x0000000010006ba0       0x2a CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010006bca        0x2 
  .rodata.usbd_desc_cfg
-                0x00000000100092c0       0x54 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010006bcc       0x54 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x0000000010009314       0x12 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010009326        0x2 
+                0x0000000010006c20       0x12 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010006c32        0x2 
  .rodata.usbd_desc_str
-                0x0000000010009328       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010006c34       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.str1.4
-                0x0000000010009340       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010006c4c       0x14 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x0000000010009354       0x49 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010006c60       0x49 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
                                          0x53 (size before relaxing)
- *fill*         0x000000001000939d        0x3 
+ *fill*         0x0000000010006ca9        0x3 
  .rodata.tud_task_ext
-                0x00000000100093a0       0x8c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006cac       0x8c CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x000000001000942c       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006d38       0x18 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.LCD_1in8_test.str1.4
-                0x0000000010009444       0x6f examples/libexamples.a(LCD_1in8_test.c.obj)
- *fill*         0x00000000100094b3        0x1 
- .rodata.Paint_DrawLine.constprop.0.str1.4
-                0x00000000100094b4       0x49 lib/GUI/libGUI.a(GUI_Paint.c.obj)
- *fill*         0x00000000100094fd        0x3 
- .rodata        0x0000000010009500      0x474 lib/Fonts/libFonts.a(font12.c.obj)
-                0x0000000010009500                Font12_Table
+                0x0000000010006d50       0x68 examples/libexamples.a(LCD_1in8_test.c.obj)
+ .rodata.gBlue_WeirdThing
+                0x0000000010006db8     0x2710 examples/libexamples.a(ImageData.c.obj)
+                0x0000000010006db8                gBlue_WeirdThing
+ .rodata        0x00000000100094c8      0x474 lib/Fonts/libFonts.a(font12.c.obj)
+                0x00000000100094c8                Font12_Table
  .rodata.DEV_Module_Init.str1.4
-                0x0000000010009974       0x15 lib/Config/libConfig.a(DEV_Config.c.obj)
- *fill*         0x0000000010009989        0x3 
+                0x000000001000993c       0x15 lib/Config/libConfig.a(DEV_Config.c.obj)
+ *fill*         0x0000000010009951        0x3 
  .rodata.DEV_SET_PWM.str1.4
-                0x000000001000998c       0x14 lib/Config/libConfig.a(DEV_Config.c.obj)
-                0x00000000100099a0                . = ALIGN (0x4)
+                0x0000000010009954       0x14 lib/Config/libConfig.a(DEV_Config.c.obj)
+                0x0000000010009968                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x00000000100099a0                . = ALIGN (0x4)
+                0x0000000010009968                . = ALIGN (0x4)
 
-.rel.dyn        0x00000000100099a0        0x0
- .rel.iplt      0x00000000100099a0        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000010009968        0x0
+ .rel.iplt      0x0000000010009968        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000000100099a0                __exidx_start = .
+                0x0000000010009968                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000000100099a0                __exidx_end = .
-                0x00000000100099a0                . = ALIGN (0x4)
-                0x00000000100099a0                __binary_info_start = .
+                0x0000000010009968                __exidx_end = .
+                0x0000000010009968                . = ALIGN (0x4)
+                0x0000000010009968                __binary_info_start = .
 
-.binary_info    0x00000000100099a0       0x28
+.binary_info    0x0000000010009968       0x28
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x00000000100099a0        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010009968        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x00000000100099a4        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000996c        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x00000000100099a8        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010009970        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x00000000100099ac        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010009974        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x00000000100099b0        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010009978        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x00000000100099b4        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000997c        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x00000000100099b8        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010009980        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x00000000100099bc        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010009984        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x00000000100099c0        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010009988        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr188
-                0x00000000100099c4        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x00000000100099c8                __binary_info_end = .
-                0x00000000100099c8                . = ALIGN (0x4)
-                0x00000000100099c8                __etext = .
+                0x000000001000998c        0x4 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010009990                __binary_info_end = .
+                0x0000000010009990                . = ALIGN (0x4)
+                0x0000000010009990                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2372,7 +2363,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020000000       0xc0 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0     0x1750 load address 0x00000000100099c8
+.data           0x00000000200000c0     0x1750 load address 0x0000000010009990
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2528,33 +2519,33 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020001810                __data_end__ = .
 
 .tm_clone_table
-                0x0000000020001810        0x0 load address 0x000000001000b118
+                0x0000000020001810        0x0 load address 0x000000001000b0e0
  .tm_clone_table
                 0x0000000020001810        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020001810        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020001810        0x0 load address 0x000000001000b118
+.igot.plt       0x0000000020001810        0x0 load address 0x000000001000b0e0
  .igot.plt      0x0000000020001810        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020001810        0x0 load address 0x000000001000b118
+                0x0000000020001810        0x0 load address 0x000000001000b0e0
                 0x0000000020001810                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x000000001000b118
+.scratch_x      0x0000000020040000        0x0 load address 0x000000001000b0e0
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x000000001000b118                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x000000001000b0e0                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x000000001000b118
+.scratch_y      0x0000000020041000        0x0 load address 0x000000001000b0e0
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x000000001000b118                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x000000001000b0e0                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x0000000020001810      0xdf8
                 0x0000000020001810                . = ALIGN (0x4)
@@ -2694,8 +2685,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x000000001000b118        0x0
-                0x000000001000b118                __flash_binary_end = .
+.flash_end      0x000000001000b0e0        0x0
+                0x000000001000b0e0                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2785,7 +2776,7 @@ LOAD lib/Icm20948/libIcm20948.a
 LOAD lib/GUI/libGUI.a
 LOAD lib/Fonts/libFonts.a
 LOAD lib/Config/libConfig.a
-LOAD /tmp/ccbS5bTt.o
+LOAD /tmp/cc22k1WM.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2911,35 +2902,39 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000884       0x2c examples/libexamples.a(LCD_1in8_test.c.obj)
  .ARM.attributes
-                0x00000000000008b0       0x2c lib/LCD/libLCD.a(LCD_1in8.c.obj)
+                0x00000000000008b0       0x32 examples/libexamples.a(ImageData.c.obj)
  .ARM.attributes
-                0x00000000000008dc       0x2c lib/GUI/libGUI.a(GUI_Paint.c.obj)
+                0x00000000000008e2       0x2c lib/LCD/libLCD.a(LCD_1in8.c.obj)
  .ARM.attributes
-                0x0000000000000908       0x32 lib/Fonts/libFonts.a(font12.c.obj)
+                0x000000000000090e       0x2c lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .ARM.attributes
-                0x000000000000093a       0x2c lib/Config/libConfig.a(DEV_Config.c.obj)
+                0x000000000000093a       0x32 lib/Fonts/libFonts.a(font12.c.obj)
  .ARM.attributes
-                0x0000000000000966       0x22 /tmp/ccbS5bTt.o
+                0x000000000000096c       0x2c lib/Config/libConfig.a(DEV_Config.c.obj)
  .ARM.attributes
-                0x0000000000000988       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0000000000000998       0x22 /tmp/cc22k1WM.o
  .ARM.attributes
-                0x00000000000009a6       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-impure.o)
+                0x00000000000009ba       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000000000009d2       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
+                0x00000000000009d8       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000000000009fe       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
+                0x0000000000000a04       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
  .ARM.attributes
-                0x0000000000000a2a       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
+                0x0000000000000a30       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
  .ARM.attributes
-                0x0000000000000a56       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
+                0x0000000000000a5c       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
  .ARM.attributes
-                0x0000000000000a82       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000000000a88       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x0000000000000aae       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+                0x0000000000000ab4       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
  .ARM.attributes
-                0x0000000000000ada       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+                0x0000000000000ae0       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
  .ARM.attributes
-                0x0000000000000b06       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+                0x0000000000000b0c       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x0000000000000b38       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+ .ARM.attributes
+                0x0000000000000b64       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
 .comment        0x0000000000000000       0xa7
  .comment       0x0000000000000000       0x59 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
@@ -2985,6 +2980,7 @@ LOAD linker stubs
  .comment       0x0000000000000059       0x5a CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/main.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .comment       0x0000000000000059       0x5a examples/libexamples.a(LCD_1in8_test.c.obj)
+ .comment       0x0000000000000059       0x5a examples/libexamples.a(ImageData.c.obj)
  .comment       0x0000000000000059       0x5a lib/LCD/libLCD.a(LCD_1in8.c.obj)
  .comment       0x0000000000000059       0x5a lib/GUI/libGUI.a(GUI_Paint.c.obj)
  .comment       0x0000000000000059       0x5a lib/Fonts/libFonts.a(font12.c.obj)
@@ -2995,45 +2991,49 @@ LOAD linker stubs
  .comment       0x00000000000000a7       0x4f /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
  .comment       0x00000000000000a7       0x4f /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
  .comment       0x00000000000000a7       0x4f /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
+ .comment       0x00000000000000a7       0x4f /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
  .comment       0x00000000000000a7       0x4f /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
  .comment       0x00000000000000a7       0x4f /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
  .comment       0x00000000000000a7       0x4f /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
  .comment       0x00000000000000a7       0x5a /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.debug_line     0x0000000000000000     0x1661
+.debug_line     0x0000000000000000     0x17a8
  .debug_line    0x0000000000000000       0x60 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .debug_line    0x0000000000000060       0xe3 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-impure.o)
  .debug_line    0x0000000000000143      0x16e /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
  .debug_line    0x00000000000002b1      0x89d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
  .debug_line    0x0000000000000b4e      0x13d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
  .debug_line    0x0000000000000c8b      0x185 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
- .debug_line    0x0000000000000e10      0x1c2 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
- .debug_line    0x0000000000000fd2      0x482 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
- .debug_line    0x0000000000001454      0x20d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+ .debug_line    0x0000000000000e10      0x147 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+ .debug_line    0x0000000000000f57      0x1c2 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_line    0x0000000000001119      0x482 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+ .debug_line    0x000000000000159b      0x20d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
 
-.debug_info     0x0000000000000000     0x574a
+.debug_info     0x0000000000000000     0x608d
  .debug_info    0x0000000000000000       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .debug_info    0x0000000000000026      0x92a /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-impure.o)
  .debug_info    0x0000000000000950      0x9b6 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
  .debug_info    0x0000000000001306      0xf1a /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
  .debug_info    0x0000000000002220      0x961 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
  .debug_info    0x0000000000002b81      0x9fb /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
- .debug_info    0x000000000000357c      0x973 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
- .debug_info    0x0000000000003eef      0xd99 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
- .debug_info    0x0000000000004c88      0xac2 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+ .debug_info    0x000000000000357c      0x943 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+ .debug_info    0x0000000000003ebf      0x973 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_info    0x0000000000004832      0xd99 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+ .debug_info    0x00000000000055cb      0xac2 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
 
-.debug_abbrev   0x0000000000000000     0x12ba
+.debug_abbrev   0x0000000000000000     0x149d
  .debug_abbrev  0x0000000000000000       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .debug_abbrev  0x0000000000000014      0x1b8 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-impure.o)
  .debug_abbrev  0x00000000000001cc      0x22d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
  .debug_abbrev  0x00000000000003f9      0x321 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
  .debug_abbrev  0x000000000000071a      0x203 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
  .debug_abbrev  0x000000000000091d      0x250 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
- .debug_abbrev  0x0000000000000b6d      0x1e8 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
- .debug_abbrev  0x0000000000000d55      0x2b9 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
- .debug_abbrev  0x000000000000100e      0x2ac /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+ .debug_abbrev  0x0000000000000b6d      0x1e3 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+ .debug_abbrev  0x0000000000000d50      0x1e8 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_abbrev  0x0000000000000f38      0x2b9 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+ .debug_abbrev  0x00000000000011f1      0x2ac /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
 
-.debug_aranges  0x0000000000000000      0x118
+.debug_aranges  0x0000000000000000      0x138
  .debug_aranges
                 0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .debug_aranges
@@ -3047,13 +3047,15 @@ LOAD linker stubs
  .debug_aranges
                 0x0000000000000098       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
  .debug_aranges
-                0x00000000000000b8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x00000000000000b8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
  .debug_aranges
-                0x00000000000000d8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+                0x00000000000000d8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
  .debug_aranges
-                0x00000000000000f8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+                0x00000000000000f8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+ .debug_aranges
+                0x0000000000000118       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
 
-.debug_str      0x0000000000000000      0xabe
+.debug_str      0x0000000000000000      0xb01
  .debug_str     0x0000000000000000       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .debug_str     0x00000000000000a3      0x522 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-impure.o)
                                         0x599 (size before relaxing)
@@ -3065,29 +3067,34 @@ LOAD linker stubs
                                         0x5c5 (size before relaxing)
  .debug_str     0x000000000000092c       0x47 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
                                         0x5dc (size before relaxing)
- .debug_str     0x0000000000000973       0xb9 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_str     0x0000000000000973       0xa1 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+                                        0x5a3 (size before relaxing)
+ .debug_str     0x0000000000000a14       0x5b /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
                                         0x5c2 (size before relaxing)
- .debug_str     0x0000000000000a2c       0x34 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+ .debug_str     0x0000000000000a6f       0x34 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
                                         0x77a (size before relaxing)
- .debug_str     0x0000000000000a60       0x5e /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+ .debug_str     0x0000000000000aa3       0x5e /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
                                         0x5d5 (size before relaxing)
 
-.debug_loc      0x0000000000000000     0x1653
+.debug_loc      0x0000000000000000     0x1678
  .debug_loc     0x0000000000000000       0x64 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
  .debug_loc     0x0000000000000064      0xf19 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
  .debug_loc     0x0000000000000f7d       0x79 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
- .debug_loc     0x0000000000000ff6       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
- .debug_loc     0x0000000000001099      0x4a9 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
- .debug_loc     0x0000000000001542      0x111 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+ .debug_loc     0x0000000000000ff6       0x25 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+ .debug_loc     0x000000000000101b       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_loc     0x00000000000010be      0x4a9 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+ .debug_loc     0x0000000000001567      0x111 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
 
-.debug_frame    0x0000000000000000      0x1a0
+.debug_frame    0x0000000000000000      0x1c0
  .debug_frame   0x0000000000000000       0x40 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-malloc.o)
  .debug_frame   0x0000000000000040       0x3c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
  .debug_frame   0x000000000000007c       0x30 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mlock.o)
  .debug_frame   0x00000000000000ac       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-sbrkr.o)
- .debug_frame   0x00000000000000d8       0x28 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
- .debug_frame   0x0000000000000100       0x58 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
- .debug_frame   0x0000000000000158       0x48 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
+ .debug_frame   0x00000000000000d8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)
+ .debug_frame   0x00000000000000f8       0x28 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_frame   0x0000000000000120       0x58 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-freer.o)
+ .debug_frame   0x0000000000000178       0x48 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
 
-.debug_ranges   0x0000000000000000       0x38
+.debug_ranges   0x0000000000000000       0x48
  .debug_ranges  0x0000000000000000       0x38 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-mallocr.o)
+ .debug_ranges  0x0000000000000038       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strcpy.o)

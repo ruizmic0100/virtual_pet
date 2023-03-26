@@ -121,6 +121,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ghostrunner/virtual_pet/Pico_code/c/examples/LCD_2in_test.c" "/home/ghostrunner/virtual_pet/Pico_code/c/build/examples/CMakeFiles/examples.dir/LCD_2in_test.c.obj"
   "/home/ghostrunner/virtual_pet/Pico_code/c/examples/OLED_1in3_C_test.c" "/home/ghostrunner/virtual_pet/Pico_code/c/build/examples/CMakeFiles/examples.dir/OLED_1in3_C_test.c.obj"
   "/home/ghostrunner/virtual_pet/Pico_code/c/examples/OLED_2in23_test.c" "/home/ghostrunner/virtual_pet/Pico_code/c/build/examples/CMakeFiles/examples.dir/OLED_2in23_test.c.obj"
+  "/home/ghostrunner/virtual_pet/Pico_code/c/examples/Pet.c" "/home/ghostrunner/virtual_pet/Pico_code/c/build/examples/CMakeFiles/examples.dir/Pet.c.obj"
   "/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c" "/home/ghostrunner/virtual_pet/Pico_code/c/build/examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj"
   "/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c" "/home/ghostrunner/virtual_pet/Pico_code/c/build/examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c.obj"
   "/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c" "/home/ghostrunner/virtual_pet/Pico_code/c/build/examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c.obj"

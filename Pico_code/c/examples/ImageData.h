@@ -42,6 +42,8 @@ extern const unsigned char gImage_1inch14_1[];
 extern const unsigned char gImage_1inch3_C_1[];
 extern const unsigned char gImage_1inch44_1[];
 extern const unsigned char gImage_1inch8_1[];
+extern const unsigned char gImage_Test[];
+extern const unsigned char gBlue_WeirdThing[];
 extern const unsigned char gImage_1inch3_1[];
 extern const unsigned char gImage_2inch_1[];
 #endif

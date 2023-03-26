@@ -53,6 +53,8 @@ LCD_Test.h
 /home/ghostrunner/virtual_pet/Pico_code/c/examples/LCD_Test.h
 LCD_1in8.h
 /home/ghostrunner/virtual_pet/Pico_code/c/examples/LCD_1in8.h
+Pet.h
+/home/ghostrunner/virtual_pet/Pico_code/c/examples/Pet.h
 
 /home/ghostrunner/virtual_pet/Pico_code/c/examples/LCD_Test.h
 DEV_Config.h
@@ -67,6 +69,8 @@ stdlib.h
 -
 Infrared.h
 /home/ghostrunner/virtual_pet/Pico_code/c/examples/Infrared.h
+
+/home/ghostrunner/virtual_pet/Pico_code/c/examples/Pet.h
 
 /home/ghostrunner/virtual_pet/pico-sdk/src/boards/include/boards/pico.h
 

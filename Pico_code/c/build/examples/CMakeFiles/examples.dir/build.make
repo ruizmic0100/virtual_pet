@@ -187,9 +187,22 @@ examples/CMakeFiles/examples.dir/OLED_2in23_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/examples.dir/OLED_2in23_test.c.s"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ghostrunner/virtual_pet/Pico_code/c/examples/OLED_2in23_test.c -o CMakeFiles/examples.dir/OLED_2in23_test.c.s
 
+examples/CMakeFiles/examples.dir/Pet.c.obj: examples/CMakeFiles/examples.dir/flags.make
+examples/CMakeFiles/examples.dir/Pet.c.obj: ../examples/Pet.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object examples/CMakeFiles/examples.dir/Pet.c.obj"
+	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/Pet.c.obj   -c /home/ghostrunner/virtual_pet/Pico_code/c/examples/Pet.c
+
+examples/CMakeFiles/examples.dir/Pet.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/examples.dir/Pet.c.i"
+	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ghostrunner/virtual_pet/Pico_code/c/examples/Pet.c > CMakeFiles/examples.dir/Pet.c.i
+
+examples/CMakeFiles/examples.dir/Pet.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/examples.dir/Pet.c.s"
+	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ghostrunner/virtual_pet/Pico_code/c/examples/Pet.c -o CMakeFiles/examples.dir/Pet.c.s
+
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -202,7 +215,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -215,7 +228,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -228,7 +241,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_claim/claim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -241,7 +254,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -254,7 +267,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -267,12 +280,12 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/sem.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/sem.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/sem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/sem.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/sem.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/sem.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -285,7 +298,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -298,7 +311,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -311,7 +324,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -324,7 +337,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/time.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/time.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/time.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/time.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/time.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -337,7 +350,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/timeout_helper.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/timeout_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/timeout_helper.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/timeout_helper.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -350,7 +363,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -363,7 +376,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/datetime.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/datetime.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/datetime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/datetime.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/datetime.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/datetime.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -376,7 +389,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/pheap.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/pheap.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/pheap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/pheap.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/pheap.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/pheap.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -389,7 +402,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/queue.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/queue.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/queue.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/queue.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/queue.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -402,7 +415,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/commo
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_uart/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -415,7 +428,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -428,7 +441,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_pll/pll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -441,7 +454,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -454,7 +467,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -467,7 +480,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -480,12 +493,12 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -498,7 +511,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -511,12 +524,12 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -529,17 +542,17 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -552,7 +565,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_math.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -565,22 +578,22 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -593,7 +606,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_math.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -606,12 +619,12 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -624,17 +637,17 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -647,7 +660,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -660,7 +673,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -673,7 +686,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -686,7 +699,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -699,7 +712,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -712,7 +725,7 @@ examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: examples/CMakeFiles/examples.dir/flags.make
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj   -c /home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c
 
 examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
@@ -735,6 +748,7 @@ examples_OBJECTS = \
 "CMakeFiles/examples.dir/LCD_2in_test.c.obj" \
 "CMakeFiles/examples.dir/OLED_1in3_C_test.c.obj" \
 "CMakeFiles/examples.dir/OLED_2in23_test.c.obj" \
+"CMakeFiles/examples.dir/Pet.c.obj" \
 "CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
@@ -797,6 +811,7 @@ examples/libexamples.a: examples/CMakeFiles/examples.dir/LCD_1in8_test.c.obj
 examples/libexamples.a: examples/CMakeFiles/examples.dir/LCD_2in_test.c.obj
 examples/libexamples.a: examples/CMakeFiles/examples.dir/OLED_1in3_C_test.c.obj
 examples/libexamples.a: examples/CMakeFiles/examples.dir/OLED_2in23_test.c.obj
+examples/libexamples.a: examples/CMakeFiles/examples.dir/Pet.c.obj
 examples/libexamples.a: examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 examples/libexamples.a: examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 examples/libexamples.a: examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -847,7 +862,7 @@ examples/libexamples.a: examples/CMakeFiles/examples.dir/home/ghostrunner/virtua
 examples/libexamples.a: examples/CMakeFiles/examples.dir/home/ghostrunner/virtual_pet/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 examples/libexamples.a: examples/CMakeFiles/examples.dir/build.make
 examples/libexamples.a: examples/CMakeFiles/examples.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking CXX static library libexamples.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghostrunner/virtual_pet/Pico_code/c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking CXX static library libexamples.a"
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/examples.dir/cmake_clean_target.cmake
 	cd /home/ghostrunner/virtual_pet/Pico_code/c/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/examples.dir/link.txt --verbose=$(VERBOSE)
 
