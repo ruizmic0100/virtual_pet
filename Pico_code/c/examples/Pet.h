@@ -23,6 +23,5 @@ void sleep(Pet* pet);
 void feed(Pet* pet);
 void walk(Pet* pet);
 
-// Any definitions needed globably.
 
 #endif

@@ -41,5 +41,3 @@ void walk(Pet* pet){
         pet->stamina = 0;
     }
 }
-
-void

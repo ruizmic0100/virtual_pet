@@ -6,4 +6,4 @@ include_directories(../Config)
 
 # 生成链接库
 add_library(LCD ${DIR_LCD_SRCS})
-target_link_libraries(LCD PUBLIC Config)
+target_link_libraries(LCD PUBLIC Config examples)

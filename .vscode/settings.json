@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "dev_config.h": "c",
+        "gui_paint.h": "c",
+        "pug_data.h": "c"
+    },
+    "cmake.configureOnOpen": false
+}

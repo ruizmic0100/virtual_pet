@@ -27,6 +27,7 @@
 #include "../../examples/pug_data.h"
 #include "../../examples/anim.h"
 #include "../../examples/Pet.h"
+#include "../../examples/Inputs.h"
 
 #define LCD_1IN8_HEIGHT 160
 #define LCD_1IN8_WIDTH 130

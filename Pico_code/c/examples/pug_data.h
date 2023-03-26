@@ -1,3 +1,7 @@
+#ifndef PUG_DATA_H
+#define PUG_DATA_H
+
+// Sprite Data
 extern const unsigned char pug_backfacing_001[];
 extern const unsigned char pug_backfacing_002[];
 extern const unsigned char pug_backfacing_003[];
@@ -21,3 +25,5 @@ extern const unsigned char pug_jump_003[35000];
 extern const unsigned char pug_sad_001[35000];
 extern const unsigned char pug_sad_002[35000];
 extern const unsigned char pug_poop_001[35000];
+
+#endif // PUG_DATA_H
