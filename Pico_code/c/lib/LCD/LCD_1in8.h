@@ -19,7 +19,14 @@
 
 #include <stdlib.h>     //itoa()
 #include <stdio.h>
+#include <string.h>
 
+#include "../../../../pico-sdk/src/host/hardware_timer/include/hardware/timer.h"
+
+
+#include "../../examples/pug_data.h"
+#include "../../examples/anim.h"
+#include "../../examples/Pet.h"
 
 #define LCD_1IN8_HEIGHT 160
 #define LCD_1IN8_WIDTH 130

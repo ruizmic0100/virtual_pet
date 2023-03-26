@@ -28,6 +28,9 @@ include_directories(./lib/OLED)
 # 生成可执行文件
 add_executable(main 
 main.c
+examples/pug_data.c
+examples/anim.c
+examples/Pet.c
 )
 
 # enable usb output, disable uart output
