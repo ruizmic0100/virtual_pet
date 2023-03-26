@@ -70,15 +70,19 @@ int LCD_1in8_test(void)
 
         switch(playerInput) {
             case 'f':
+                printf("Feeding...\n");
                 feed(pug);
                 break;
             case 'w':
+                printf("Walking...\n");
                 walk(pug);
                 break;
             case 'p':
                 dogHappyAnim(BlackImage);
+                printf("Petting...\n");
                 break;
             case 'c':
+                printf("Cleaning up poop...\n");
                 if (poopPresent) {
                     poopPresent = 0;
                     Paint_Clear(WHITE);
@@ -86,9 +90,9 @@ int LCD_1in8_test(void)
                 }
                 break;
             default:
-                printf("Could not interpret playerInput.\n");
-
+                printf("Wainting for player input...\n");
         }
+        printf("Pug Stats: %i %i %i\t", pug->hunger, pug->stamina, pug->mood);
 
         // Check for mood.
         if(pug->mood == happy){
@@ -106,28 +110,30 @@ int LCD_1in8_test(void)
         if(pug->stamina < 15){
             makeNeutral(pug);
             dogSleepingAnim(BlackImage);
+            DEV_Delay_ms(3000);
             sleep(&pug); // Reset the pet's stamina.
         }
-        if(currTime > 30 && pug->stamina > 50){
+        if(currTime > 30 && pug->stamina < 50){
             makeNeutral(pug);
             dogSleepingAnim(BlackImage);
             sleep(&pug);
         }
 
-        if(pug->hunger > 80 && pug->stamina > 50){
-            makeHappy(&pug);
-        }
-        if(pug->hunger < 25 && pug->stamina < 25 && (currTime%30) == 0){ 
-            makeSad(&pug);
-            dogSadAnim(BlackImage);
-        }
+        // if(pug->hunger > 80 && pug->stamina > 50){
+        //     makeHappy(&pug);
+        // }
+        // if(pug->hunger < 25 && pug->stamina < 25 && (currTime%30) == 0){ 
+        //     makeSad(&pug);
+        //     dogSadAnim(BlackImage);
+        // }
 
-        if ((currTime%60) == 0) {
+        if ((currTime%20) == 0) {
             poopAnim(BlackImage);
             poopPresent = 1;
+            DEV_Delay_ms(2000);
         }
 
-        makeNeutral(&pug); // Set the default mood to be neutral when not happy or sad.
+        // makeNeutral(&pug); // Set the default mood to be neutral when not happy or sad.
     }
 
     /* Module Exit */

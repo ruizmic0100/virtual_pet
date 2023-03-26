@@ -53,17 +53,17 @@ void dogWalkingAnim(UWORD* BlackImage) {
 
 void dogHappyAnim(UWORD* BlackImage) {
 
-    Paint_DrawImage(pug_jump_001,0,1,128,128);
+    Paint_DrawImage(pug_jump_001,5,10,128,128);
     LCD_1IN8_Display(BlackImage);
     DEV_Delay_ms(ANIMATION_SPEED);
     Paint_Clear(WHITE);
 
-    Paint_DrawImage(pug_jump_002,0,1,128,128);
+    Paint_DrawImage(pug_jump_002,5,10,128,128);
     LCD_1IN8_Display(BlackImage);
     DEV_Delay_ms(ANIMATION_SPEED);
     Paint_Clear(WHITE);
 
-    Paint_DrawImage(pug_jump_003,0,1,128,128);
+    Paint_DrawImage(pug_jump_003,5,10,128,128);
     LCD_1IN8_Display(BlackImage);
     DEV_Delay_ms(ANIMATION_SPEED);
     Paint_Clear(WHITE);
@@ -92,19 +92,19 @@ void dogNeutralAnim(UWORD* BlackImage) {
 
 void introAnim(UWORD* BlackImage) {
 
-    for (int i=0;i<80;i++) {
+    for (int i=0;i<10;i++) {
 
-        Paint_DrawImage(pug_rs_004,i,20,128,128);
+        Paint_DrawImage(pug_rs_004,i,5,128,128);
         LCD_1IN8_Display(BlackImage);
         DEV_Delay_ms(ANIMATION_SPEED);
         Paint_Clear(WHITE);
 
-        Paint_DrawImage(pug_rs_005,i,20,128,128);
+        Paint_DrawImage(pug_rs_005,i,5,128,128);
         LCD_1IN8_Display(BlackImage);
         DEV_Delay_ms(ANIMATION_SPEED);
         Paint_Clear(WHITE);
 
-        Paint_DrawImage(pug_rs_006,i,20,128,128);
+        Paint_DrawImage(pug_rs_006,i,5,128,128);
         LCD_1IN8_Display(BlackImage);
         DEV_Delay_ms(ANIMATION_SPEED);
         Paint_Clear(WHITE);
@@ -112,6 +112,9 @@ void introAnim(UWORD* BlackImage) {
 
     dogHappyAnim(BlackImage);
     dogNeutralAnim(BlackImage);
+    Paint_DrawString_EN(60,60, "PocketPals!", &Font12, BLACK, WHITE);
+    LCD_1IN8_Display(BlackImage);
+    DEV_Delay_ms(2000);
 }
 
 void poopAnim(UWORD* BlackImage) {
